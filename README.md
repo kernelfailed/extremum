@@ -1,15 +1,15 @@
 # Extremum
 
-Нативный SwiftUI-файловый менеджер для macOS в стиле Windows Explorer/Finder с вкладками, двумя панелями и Git-интеграцией.
+A native SwiftUI file manager for macOS, inspired by Windows Explorer and Finder, with tabs, dual-pane mode, and Git integration.
 
-## Запуск
+## Run
 
 ```bash
 cd Extremum
 swift run Extremum
 ```
 
-## Сборка `.app`
+## Build the `.app`
 
 ```bash
 cd Extremum
@@ -17,27 +17,27 @@ chmod +x Scripts/make-app.sh
 Scripts/make-app.sh
 ```
 
-Готовый бандл появится в `dist/Extremum.app`.
+The finished app bundle will be created at `dist/Extremum.app`.
 
-## Реализовано
+## Features
 
-- редактируемая адресная строка с переходом по Enter;
-- `Cmd+L`, `Cmd+F`, `Cmd+N`, `Cmd+A`, `Cmd+R`, `Cmd+1...4` и другие системные хоткеи;
-- menu bar: File, Edit, Go, View, Create, Debug;
-- вкладки и двухпанельный режим;
-- debug window с логом действий;
-- история назад/вперед, переход вверх, обновление;
-- контекстное меню в рабочей области и на элементах;
-- Finder-like контекстное меню: Open With, свойства, сжатие/разархивирование, псевдонимы, теги, share, quick actions, терминал;
-- настройки menu bar для включения/выключения пунктов контекстного меню;
-- drag-and-drop файлов в текущую папку и на папки;
-- создание папки, `.txt`, `.md`, `.json`, `.csv`, `.html`, `.swift`, `.plist`;
-- переключение режимов отображения: значки, плитка, список, колонки;
-- фиксированная сетка в режимах значков и плиток;
-- множественное выделение через `Cmd` + клик, `Cmd+A` и рамочное выделение;
-- Quick Look thumbnails, иконки `.app`/пакетов и быстрый просмотр;
-- полупрозрачные скрытые файлы;
-- Git root/branch/status бейджи в git-папках;
-- рекурсивный поиск: обычный текст, glob-маски вроде `*.exe`, точное совпадение через кавычки;
-- сортировка и показ скрытых файлов;
-- открытие файлов системным приложением и переход в папки по двойному клику.
+- editable address bar with Enter-to-navigate support;
+- system shortcuts including `Cmd+L`, `Cmd+F`, `Cmd+N`, `Cmd+A`, `Cmd+R`, `Cmd+1...4`, and others;
+- menu bar sections: File, Edit, Go, View, Create, Debug;
+- tabs and dual-pane mode;
+- debug window with action logs;
+- back/forward history, go up, and refresh;
+- context menus in the workspace and on individual items;
+- Finder-like context menu actions: Open With, properties, compress/extract, aliases, tags, share, quick actions, and terminal;
+- menu bar settings for enabling/disabling context menu items;
+- drag-and-drop files into the current folder and onto folders;
+- create folders and files: `.txt`, `.md`, `.json`, `.csv`, `.html`, `.swift`, `.plist`;
+- view modes: icons, tiles, list, and columns;
+- fixed grid layout in icon and tile modes;
+- multi-selection with `Cmd` + click, `Cmd+A`, and drag selection rectangle;
+- Quick Look thumbnails, `.app`/package icons, and quick preview;
+- semi-transparent hidden files;
+- Git root, branch, and status badges in Git folders;
+- recursive search: plain text, glob masks such as `*.exe`, and exact matches using quotes;
+- sorting and hidden file visibility controls;
+- open files with the system default app and navigate into folders by double-clicking.
